@@ -497,7 +497,7 @@
         enableAutoReload: true // it will reload the new image when validating attributes changes
     });
     observer.observe();
-    $('#intro').css('background', 'url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat');
+    // $('#intro').css('background', 'url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat');
     $('.carousel').carousel({
         interval: 3000,
     })
