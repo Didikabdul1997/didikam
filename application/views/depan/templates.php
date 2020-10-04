@@ -151,7 +151,7 @@
 <!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="<?= base_url(); ?>material/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="<?= base_url(); ?>material/js/mdb.min.js"></script>
+<!-- <script type="text/javascript" src="<?= base_url(); ?>material/js/mdb.min.js"></script> -->
 <!-- Your custom scripts (optional) -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 <script type="text/javascript">
