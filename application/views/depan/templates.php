@@ -151,6 +151,12 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </script>
 <script type="text/javascript">
+    const observer = lozad('.lozad', {
+        rootMargin: '10px 0px', // syntax similar to that of CSS Margin
+        threshold: 0.1, // ratio of element convergence
+        enableAutoReload: true // it will reload the new image when validating attributes changes
+    });
+    observer.observe();
     $('#body').append(`
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
@@ -158,12 +164,6 @@
         <link rel="stylesheet" href="<?= base_url(); ?>material/css/mdb.min.css">
         <link rel="stylesheet" href="<?= base_url(); ?>material/css/style.css">
 `);
-    const observer = lozad('.lozad', {
-        rootMargin: '10px 0px', // syntax similar to that of CSS Margin
-        threshold: 0.1, // ratio of element convergence
-        enableAutoReload: true // it will reload the new image when validating attributes changes
-    });
-    observer.observe();
     $('#intro').css('background', 'url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat');
     $('.carousel').carousel({
         interval: 3000,
