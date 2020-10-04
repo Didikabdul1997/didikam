@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design for Bootstrap</title>
+    <title>Welcome To Didikam</title>
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
     <!-- Font Awesome -->
@@ -149,7 +149,7 @@
 
     </header>
     <!--Main Navigation-->
-
+    <script type="text/javascript" src="<?= base_url(); ?>material/plugins/jquery-lazy/jquery.lazy.min.js"></script>
     <!--Main layout-->
     <main class="mt-5">
         <div class="container">
@@ -159,13 +159,12 @@
 
                 <!-- Heading -->
                 <h2 class="mb-5 font-weight-bold">Best Features</h2>
-
                 <!--Grid row-->
                 <div class="row d-flex justify-content-center mb-4">
 
                     <!--Grid column-->
                     <div class="col-md-8">
-
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
                         <!-- Description -->
                         <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate
                             hic
@@ -237,7 +236,7 @@
                     <div class="col-lg-4 col-md-12 mb-4">
 
                         <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid" alt="">
+                            <img data-src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="lozad img-fluid" alt="">
                             <div class="mask rgba-white-slight"></div>
                         </div>
 
@@ -254,7 +253,7 @@
                     <div class="col-lg-4 col-md-6 mb-4">
 
                         <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="">
+                            <img data-src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="lozad img-fluid" alt="">
                             <div class="mask rgba-white-slight"></div>
                         </div>
 
@@ -271,7 +270,7 @@
                     <div class="col-lg-4 col-md-6 mb-4">
 
                         <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/29.jpg" class="img-fluid" alt="">
+                            <img data-src="https://mdbootstrap.com/img/Photos/Others/images/29.jpg" class="lozad img-fluid" alt="">
                             <div class="mask rgba-white-slight"></div>
                         </div>
 
@@ -294,7 +293,7 @@
                     <div class="col-lg-4 col-md-12 mb-4">
 
                         <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/10.jpg" class="img-fluid" alt="">
+                            <img data-src="https://mdbootstrap.com/img/Photos/Others/images/10.jpg" class="lozad img-fluid" alt="">
                             <div class="mask rgba-white-slight"></div>
                         </div>
 
@@ -311,7 +310,7 @@
                     <div class="col-lg-4 col-md-6 mb-4">
 
                         <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" class="img-fluid" alt="">
+                            <img data-src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" class="lozad img-fluid" alt="">
                             <div class="mask rgba-white-slight"></div>
                         </div>
 
@@ -328,7 +327,7 @@
                     <div class="col-lg-4 col-md-6 mb-4">
 
                         <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" class="img-fluid" alt="">
+                            <img data-src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" class="lozad img-fluid" alt="">
                             <div class="mask rgba-white-slight"></div>
                         </div>
 
@@ -374,17 +373,17 @@
                             <div class="carousel-inner z-depth-1-half" role="listbox">
                                 <!--First slide-->
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+                                    <img class="lozad d-block w-100" data-src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
                                 </div>
                                 <!--/First slide-->
                                 <!--Second slide-->
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
+                                    <img class="lozad d-block w-100" data-src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
                                 </div>
                                 <!--/Second slide-->
                                 <!--Third slide-->
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
+                                    <img class="lozad d-block w-100" data-src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
                                 </div>
                                 <!--/Third slide-->
                             </div>
@@ -665,36 +664,18 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="<?= base_url(); ?>material/js/mdb.min.js"></script>
 <!-- Your custom scripts (optional) -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 <script type="text/javascript">
-    // Regular map
-    function regular_map() {
-        var var_location = new google.maps.LatLng(40.725118, -73.997699);
-
-        var var_mapoptions = {
-            center: var_location,
-            zoom: 14
-        };
-
-        var var_map = new google.maps.Map(document.getElementById("map-container"),
-            var_mapoptions);
-
-        var var_marker = new google.maps.Marker({
-            position: var_location,
-            map: var_map,
-            title: "New York"
-        });
-    }
-
-    // Initialize maps
-    google.maps.event.addDomListener(window, 'load', regular_map);
-
-    // Carousel options
-
+    const observer = lozad('.lozad', {
+        rootMargin: '10px 0px', // syntax similar to that of CSS Margin
+        threshold: 0.1, // ratio of element convergence
+        enableAutoReload: true // it will reload the new image when validating attributes changes
+    });
+    observer.observe();
     $('.carousel').carousel({
         interval: 3000,
     })
 </script>
-
 </body>
 
 </html>
