@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Welcome To Didikam</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <title><?= $title; ?></title>
+    <link rel="icon" href="<?= base_url(); ?>assets/images/icons/d.png" type="image/x-icon">
     <link rel="stylesheet" href="<?= base_url(); ?>material/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url(); ?>material/css/mdb.min.css">
     <link rel="stylesheet" href="<?= base_url(); ?>material/css/style.css">

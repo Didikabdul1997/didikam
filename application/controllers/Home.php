@@ -17,7 +17,8 @@ class Home extends CI_Controller
 
     public function index()
     {
-        $this->load->view('depan/templates');
+        $data['title'] = 'Welcome To DidikAm';
+        $this->load->view('depan/templates', $data);
     }
 
     public function about()
