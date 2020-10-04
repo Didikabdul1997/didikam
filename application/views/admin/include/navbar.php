@@ -9,7 +9,7 @@
                 <button class="mdc-button mdc-menu-button">
                     <span class="d-flex align-items-center">
                         <span class="figure">
-                            <img src="<?= base_url(); ?>assets/images/profile/<?= $user['image']; ?>" alt="user" class="user">
+                            <img src="/assets/images/profile/<?= $user['image']; ?>" alt="user" class="user">
                         </span>
                         <span class="user-name"><?= $user['name']; ?></span>
                     </span>
@@ -24,7 +24,7 @@
                                 <h6 class="item-subject font-weight-normal">Edit profile</h6>
                             </div>
                         </li>
-                        <a href="<?= base_url(); ?>auth/logout">
+                        <a href="/auth/logout">
                             <li class="mdc-list-item" role="menuitem">
                                 <div class="item-thumbnail item-thumbnail-icon-only">
                                     <i class="mdi mdi-settings-outline text-primary"></i>

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?= $title; ?></title>
-    <link rel="icon" href="<?= base_url(); ?>assets/images/icons/d.png" type="image/x-icon">
-    <link rel="stylesheet" href="<?= base_url(); ?>material/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>material/css/mdb.min.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>material/css/style.css">
+    <link rel="icon" href="/assets/images/icons/d.png" type="image/x-icon">
+    <link rel="stylesheet" href="/material/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/material/css/mdb.min.css">
+    <link rel="stylesheet" href="/material/css/style.css">
 </head>
 </head>
 
@@ -23,7 +23,7 @@
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.7);
-        position: fixed;
+        /* position: fixed; */
         top: 0;
         left: 0;
         z-index: 100;
@@ -56,7 +56,7 @@
                                     <div class="invalid-feedback" id="password_error"></div>
                                 </div>
                                 <button id="login" class="btn btn-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit"><b class="mr-1">Login</b> <b class="fas fa-sign-in-alt"></b></button>
-                                <a href="<?= base_url(); ?>" class="text-info"><u class="fas fa-arrow-left"></u><u> Home</u></a>
+                                <a href="/" class="text-info"><u class="fas fa-arrow-left"></u><u> Home</u></a>
                             </form>
                         </div>
                     </div>
@@ -65,9 +65,9 @@
         </div>
     </main>
 </body>
-<script type="text/javascript" src="<?= base_url(); ?>material/js/jquery.min.js"></script>
-<script type="text/javascript" src="<?= base_url(); ?>material/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?= base_url(); ?>material/js/mdb.min.js"></script>
+<script type="text/javascript" src="/material/js/jquery.min.js"></script>
+<script type="text/javascript" src="/material/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/material/js/mdb.min.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {
@@ -154,7 +154,7 @@
                         </div>`).insertBefore('#form');
                     remove_pesan();
                     setTimeout(function() {
-                        document.location.href = BASE_URL + 'admin';
+                        document.location.href = BASE_URL + 'dashboard';
                     }, 1500);
                 }
             }

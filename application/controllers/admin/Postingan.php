@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin extends CI_Controller
+class Postingan extends CI_Controller
 {
 
     public function __construct()
@@ -12,18 +12,14 @@ class Admin extends CI_Controller
 
     private function _get_commond_data(&$data)
     {
-        $data['app_name']        = $this->db->get_where('system_config', ['sys_id' => 'app_name'])->row_array()['sys_value'];
-        $data['app_icon']        = $this->db->get_where('system_config', ['sys_id' => 'app_icon'])->row_array()['sys_value'];
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $data['role'] = $this->db->get_where('user_role', ['id' => $this->session->userdata('role_id')])->row_array();
     }
-
 
     public function index()
     {
         $this->_get_commond_data($data);
-        $data['title'] = 'Dashboard DidikAm';
-        $data['page'] = 'admin/dashboard';
+        $data['title'] = 'Postingan';
+        $data['page'] = 'admin/postingan/data';
         $this->load->view('admin/templates', $data);
     }
 }

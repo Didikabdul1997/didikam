@@ -1,29 +1,31 @@
 <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
     <div class="mdc-drawer__header">
-        <a href="<?= base_url(); ?>admin" class="brand-logo">
+        <a href="/" class="brand-logo" target="_blank">
             <h2 class="text-white align-middle">
-                <img src="<?= base_url(); ?>assets/images/icons/d.png" width="30" style="transform: rotate(15deg);">
+                <img src="/assets/images/icons/d.png" width="30" style="transform: rotate(15deg);">
                 idik Am
             </h2>
         </a>
+        <hr>
     </div>
     <div class="mdc-drawer__content">
         <div class="user-info">
-            <p class="name">Clyde Miles</p>
-            <p class="email">clydemiles@elenor.us</p>
+            <p class="name"><?= $user['name']; ?></p>
+            <p class="email"><?= $user['email']; ?></p>
+            <hr>
         </div>
         <div class="mdc-list-group">
             <nav class="mdc-list mdc-drawer-menu">
                 <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="index.html">
+                    <a class="mdc-drawer-link" href="/dashboard">
                         <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
                         Dashboard
                     </a>
                 </div>
                 <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="pages/forms/basic-forms.html">
-                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
-                        Forms
+                    <a class="mdc-drawer-link" href="/admin/Postingan">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">book</i>
+                        Postingan
                     </a>
                 </div>
                 <div class="mdc-list-item mdc-drawer-item">

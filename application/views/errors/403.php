@@ -9,10 +9,10 @@
 
     <title>403 Access Forbidden</title>
 
-    <link href="<?= base_url(); ?>assets/img/icons/app.png" rel="icon" type="image/png">
+    <link href="/assets/img/icons/app.png" rel="icon" type="image/png">
 
     <!-- CSS Files -->
-    <link href="<?= base_url(); ?>assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
+    <link href="/assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
 </head>
 
 <body>

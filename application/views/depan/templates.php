@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?= $title; ?></title>
-    <link rel="icon" href="<?= base_url(); ?>assets/images/icons/d.png" type="image/x-icon">
-    <link rel="stylesheet" href="<?= base_url(); ?>material/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>material/css/mdb.min.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>material/css/style.css">
+    <link rel="icon" href="/assets/images/icons/d.png" type="image/x-icon">
+    <link rel="stylesheet" href="/material/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/material/css/mdb.min.css">
+    <link rel="stylesheet" href="/material/css/style.css">
 </head>
 <style type="text/css">
     html,
@@ -55,7 +55,7 @@
             <div class="container">
 
                 <!-- Navbar brand -->
-                <a class="navbar-brand" href="<?= base_url(); ?>"><b>DidikAm</b></a>
+                <a class="navbar-brand" href="/"><b>DidikAm</b></a>
 
                 <!-- Collapse button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,9 +87,15 @@
 
                     <!-- Social Icon  -->
                     <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a href="<?= base_url(); ?>auth" class="nav-link">Login <i class="fas fa-sign-in-alt"></i></a>
-                        </li>
+                        <?php if ($this->session->userdata('email')) : ?>
+                            <li class="nav-item">
+                                <a href="/dashboard" class="nav-link"><?= $this->session->userdata('email'); ?> <i class="fas fa-user mr-1"></i></a>
+                            </li>
+                        <?php else : ?>
+                            <li class="nav-item">
+                                <a href="/auth" class="nav-link">Login <i class="fas fa-sign-in-alt"></i></a>
+                            </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
                 <!-- Collapsible content -->
@@ -378,82 +384,6 @@
         </div>
         <!-- Social buttons -->
 
-        <!--Footer Links-->
-        <div class="container mt-5 mb-4 text-center text-md-left">
-            <div class="row mt-3">
-
-                <!--First column-->
-                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Company name</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
-                        amet, consectetur adipisicing elit.</p>
-                </div>
-                <!--/.First column-->
-
-                <!--Second column-->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Products</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="#!">MDBootstrap</a>
-                    </p>
-                    <p>
-                        <a href="#!">MDWordPress</a>
-                    </p>
-                    <p>
-                        <a href="#!">BrandFlow</a>
-                    </p>
-                    <p>
-                        <a href="#!">Bootstrap Angular</a>
-                    </p>
-                </div>
-                <!--/.Second column-->
-
-                <!--Third column-->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Useful links</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="#!">Your Account</a>
-                    </p>
-                    <p>
-                        <a href="#!">Become an Affiliate</a>
-                    </p>
-                    <p>
-                        <a href="#!">Shipping Rates</a>
-                    </p>
-                    <p>
-                        <a href="#!">Help</a>
-                    </p>
-                </div>
-                <!--/.Third column-->
-
-                <!--Fourth column-->
-                <div class="col-md-4 col-lg-3 col-xl-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Contact</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <i class="fas fa-home"></i></i> New York, NY 10012, US</p>
-                    <p>
-                        <i class="fa fa-envelope mr-3"></i> info@example.com</p>
-                    <p>
-                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-                    <p>
-                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
-                </div>
-                <!--/.Fourth column-->
-
-            </div>
-        </div>
         <!--/.Footer Links-->
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
@@ -465,10 +395,10 @@
     <!-- Footer -->
 
 </body>
-<script type="text/javascript" src="<?= base_url(); ?>material/js/jquery.min.js"></script>
-<script type="text/javascript" src="<?= base_url(); ?>material/js/popper.min.js"></script>
-<script type="text/javascript" src="<?= base_url(); ?>material/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?= base_url(); ?>material/js/mdb.min.js"></script>
+<script type="text/javascript" src="/material/js/jquery.min.js"></script>
+<script type="text/javascript" src="/material/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/material/js/popper.min.js"></script>
+<script type="text/javascript" src="/material/js/mdb.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </script>
 <script type="text/javascript">
