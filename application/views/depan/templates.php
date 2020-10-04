@@ -56,7 +56,7 @@
             <div class="container">
 
                 <!-- Navbar brand -->
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="<?= base_url(); ?>"><b>DidikAm</b></a>
 
                 <!-- Collapse button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,13 +89,7 @@
                     <!-- Social Icon  -->
                     <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-facebook"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="fab fa-instagram"></i></a>
+                            <a href="<?= base_url(); ?>auth" class="nav-link">Login <i class="fas fa-sign-in-alt"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -116,13 +110,11 @@
                     <div class="row d-flex justify-content-center text-center">
 
                         <div class="col-md-10">
-
                             <!-- Heading -->
-                            <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">Travel</h2>
+                            <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">Didik Am</h2>
 
                             <!-- Divider -->
                             <hr class="hr-light">
-
                             <!-- Description -->
                             <h4 class="white-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Deleniti
@@ -337,10 +329,6 @@
 
             </section>
             <!--Section: Examples-->
-
-            <section id="gallery" class="text-center">
-                okkdkjdlkjlkjlkj
-            </section>
         </div>
     </main>
     <!--Main layout-->

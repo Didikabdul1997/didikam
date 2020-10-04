@@ -22,8 +22,8 @@ class Auth extends CI_Controller
     {
         $this->_get_commond_data($data);
         $data['title'] = "User Login";
-        $data['pages'] = "depan/auth/login";
-        $this->load->view('depan/templates', $data);
+        // $data['pages'] = "depan/auth/login";
+        $this->load->view('depan/auth/login', $data);
     }
 
 
