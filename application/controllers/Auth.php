@@ -14,15 +14,14 @@ class Auth extends CI_Controller
         if ($this->session->userdata('email')) {
             redirect('user');
         }
-        $data['app_name']        = $this->db->get_where('system_config', ['sys_id' => 'app_name'])->row_array()['sys_value'];
-        $data['app_icon']        = $this->db->get_where('system_config', ['sys_id' => 'app_icon'])->row_array()['sys_value'];
+        // $data['app_name']        = $this->db->get_where('system_config', ['sys_id' => 'app_name'])->row_array()['sys_value'];
+        // $data['app_icon']        = $this->db->get_where('system_config', ['sys_id' => 'app_icon'])->row_array()['sys_value'];
     }
 
     public function index()
     {
         $this->_get_commond_data($data);
         $data['title'] = "User Login";
-        // $data['pages'] = "depan/auth/login";
         $this->load->view('depan/auth/login', $data);
     }
 
