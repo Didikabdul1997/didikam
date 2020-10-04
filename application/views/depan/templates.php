@@ -143,28 +143,21 @@
 
     <!-- Footer -->
 
-    <!-- Font Awesome -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> -->
-    <!-- Google Fonts Roboto -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> -->
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="<?= base_url(); ?>material/css/bootstrap.min.css">
-    <!-- Material Design Bootstrap -->
-    <!-- <link rel="stylesheet" href="<?= base_url(); ?>material/css/mdb.min.css"> -->
-    <!-- Your custom styles (optional) -->
-    <!-- <link rel="stylesheet" href="<?= base_url(); ?>material/css/style.css"> -->
 </body>
-<!-- jQuery -->
 <script type="text/javascript" src="<?= base_url(); ?>material/js/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
 <script type="text/javascript" src="<?= base_url(); ?>material/js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="<?= base_url(); ?>material/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<!-- <script type="text/javascript" src="<?= base_url(); ?>material/js/mdb.min.js"></script> -->
-<!-- Your custom scripts (optional) -->
+<script type="text/javascript" src="<?= base_url(); ?>material/js/mdb.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+</script>
 <script type="text/javascript">
+    $('#body').append(`
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link rel="stylesheet" href="<?= base_url(); ?>material/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?= base_url(); ?>material/css/mdb.min.css">
+        <link rel="stylesheet" href="<?= base_url(); ?>material/css/style.css">
+`);
     const observer = lozad('.lozad', {
         rootMargin: '10px 0px', // syntax similar to that of CSS Margin
         threshold: 0.1, // ratio of element convergence
