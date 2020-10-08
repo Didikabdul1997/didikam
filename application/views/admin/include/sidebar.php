@@ -23,7 +23,7 @@
                     </a>
                 </div>
                 <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="/admin/Postingan">
+                    <a class="mdc-drawer-link" href="/admin/postingan">
                         <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">book</i>
                         Postingan
                     </a>

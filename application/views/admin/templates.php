@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/material/admin/css/demo/style.css">
     <script type="text/javascript" src="/material/js/jquery.min.js"></script>
     <script type="text/javascript" src="/material/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/material/css/addons/datatables2.min.css"></script>
+    <script type="text/javascript" src="/material/js/addons/datatables2.min.js"></script>
 </head>
 
 <body>

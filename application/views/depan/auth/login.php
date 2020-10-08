@@ -18,16 +18,6 @@
     body {
         height: 100%;
     }
-
-    main {
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        /* position: fixed; */
-        top: 0;
-        left: 0;
-        z-index: 100;
-    }
 </style>
 
 <body id="body">
@@ -44,7 +34,7 @@
                             <?= $this->session->flashdata('msg_logout'); ?>
                             <form id="form" class="text-center mt-3" style="color: #757575;">
                                 <p><b>Silahkan Login Dibawah !!</b></p>
-                                <hr width="70%">
+                                <hr width="70%"><input type="hidden" id="csrf" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                                 <div class="md-form mt-5 text-left">
                                     <input type="text" id="email" name="email" class="form-control">
                                     <label for="email" id="l_email">Username</label>
@@ -73,6 +63,7 @@
     $(document).ready(function() {
         remove_pesan();
     });
+
     var BASE_URL = "<?php echo base_url(); ?>";
     $('#body').append(`
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -93,6 +84,11 @@
     }
 
     function signIn() {
+        var csfrData = {};
+        csfrData['<?php echo $this->security->get_csrf_token_name(); ?>'] = '<?php echo $this->security->get_csrf_hash(); ?>';
+        $.ajaxSetup({
+            data: csfrData
+        });
         var form_data = new FormData($('#form')[0]);
         var link = BASE_URL + 'auth/signIn';
         $.ajax({

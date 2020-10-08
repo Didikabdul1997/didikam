@@ -1,83 +1,453 @@
 <main class="content-wrapper">
   <div class="mdc-layout-grid">
     <div class="mdc-layout-grid__inner">
-      <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
-        <thead>
-          <tr>
-            <th class="th-sm">Name
-            </th>
-            <th class="th-sm">Position
-            </th>
-            <th class="th-sm">Office
-            </th>
-            <th class="th-sm">Age
-            </th>
-            <th class="th-sm">Start date
-            </th>
-            <th class="th-sm">Salary
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Tiger Nixon</td>
-            <td>System Architect</td>
-            <td>Edinburgh</td>
-            <td>61</td>
-            <td>2011/04/25</td>
-            <td>$320,800</td>
-          </tr>
-          <tr>
-            <td>Garrett Winters</td>
-            <td>Accountant</td>
-            <td>Tokyo</td>
-            <td>63</td>
-            <td>2011/07/25</td>
-            <td>$170,750</td>
-          </tr>
-          <tr>
-            <td>Ashton Cox</td>
-            <td>Junior Technical Author</td>
-            <td>San Francisco</td>
-            <td>66</td>
-            <td>2009/01/12</td>
-            <td>$86,000</td>
-          </tr>
-          <tr>
-            <td>Cedric Kelly</td>
-            <td>Senior Javascript Developer</td>
-            <td>Edinburgh</td>
-            <td>22</td>
-            <td>2012/03/29</td>
-            <td>$433,060</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th>Name
-            </th>
-            <th>Position
-            </th>
-            <th>Office
-            </th>
-            <th>Age
-            </th>
-            <th>Start date
-            </th>
-            <th>Salary
-            </th>
-          </tr>
-        </tfoot>
-      </table>
+      <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+        <div class="mdc-card p-0">
+          <h6 class="card-title card-padding pb-0">Basic Table</h6>
+          <div class="table-responsive">
+            <table id="table_id" class="table">
+              <thead>
+                <tr>
+                  <th class="text-left">Dessert (100g serving)</th>
+                  <th>Calories</th>
+                  <th>Fat (g)</th>
+                  <th>Link</th>
+                  <th>Carbs</th>
+                  <th>Protein (g)</th>
+                  <th>Sodium (mg)</th>
+                  <th>Calcium (%)</th>
+                  <th>Iron (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-left">Frozen yogurt</td>
+                  <td>1.59</td>
+                  <td>6.0</td>
+                  <td>50</td>
+                  <td>4.0</td>
+                  <td>87</td>
+                  <td>20%</td>
+                  <td>4%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Frozen yogurt</td>
+                  <td>1.59</td>
+                  <td>2.5</td>
+                  <td>35</td>
+                  <td>2.0</td>
+                  <td>97</td>
+                  <td>17%</td>
+                  <td>2%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Ice crean sandwich</td>
+                  <td>1.4</td>
+                  <td>4.0</td>
+                  <td>40</td>
+                  <td>8.0</td>
+                  <td>83</td>
+                  <td>14%</td>
+                  <td>7%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Eclair</td>
+                  <td>1.7</td>
+                  <td>3.0</td>
+                  <td>34</td>
+                  <td>6.0</td>
+                  <td>67</td>
+                  <td>17%</td>
+                  <td>3%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Cupcake</td>
+                  <td>2.49</td>
+                  <td>4.0</td>
+                  <td>45</td>
+                  <td>3.05</td>
+                  <td>83</td>
+                  <td>20%</td>
+                  <td>9%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Jellybean</td>
+                  <td>0.78</td>
+                  <td>5.2</td>
+                  <td>35</td>
+                  <td>2.0</td>
+                  <td>27</td>
+                  <td>18%</td>
+                  <td>37%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Gingerbread</td>
+                  <td>1.59</td>
+                  <td>6.0</td>
+                  <td>50</td>
+                  <td>4.0</td>
+                  <td>87</td>
+                  <td>20%</td>
+                  <td>4%</td>
+                  <td>5.7%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Lollipop</td>
+                  <td>1.59</td>
+                  <td>6.0</td>
+                  <td>50</td>
+                  <td>4.0</td>
+                  <td>87</td>
+                  <td>20%</td>
+                  <td>4%</td>
+                  <td>6.5%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Honeycomb</td>
+                  <td>0.45</td>
+                  <td>5.0</td>
+                  <td>45</td>
+                  <td>3.5</td>
+                  <td>45</td>
+                  <td>19%</td>
+                  <td>26%</td>
+                  <td>9%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Donut</td>
+                  <td>0.67</td>
+                  <td>5.0</td>
+                  <td>56</td>
+                  <td>3.34</td>
+                  <td>67</td>
+                  <td>23%</td>
+                  <td>4%</td>
+                  <td>1.8%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Kitkat</td>
+                  <td>0.59</td>
+                  <td>8.34</td>
+                  <td>43</td>
+                  <td>1.97</td>
+                  <td>34</td>
+                  <td>18%</td>
+                  <td>13%</td>
+                  <td>1.5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+        <div class="mdc-card p-0">
+          <h6 class="card-title card-padding pb-0">Hoverable Table</h6>
+          <div class="table-responsive">
+            <table class="table table-hoverable">
+              <thead>
+                <tr>
+                  <th class="text-left">Dessert (100g serving)</th>
+                  <th>Calories</th>
+                  <th>Fat (g)</th>
+                  <th>Link</th>
+                  <th>Carbs</th>
+                  <th>Protein (g)</th>
+                  <th>Sodium (mg)</th>
+                  <th>Calcium (%)</th>
+                  <th>Iron (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-left">Frozen yogurt</td>
+                  <td>1.59</td>
+                  <td>6.0</td>
+                  <td>50</td>
+                  <td>4.0</td>
+                  <td>87</td>
+                  <td>20%</td>
+                  <td>4%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Frozen yogurt</td>
+                  <td>1.59</td>
+                  <td>2.5</td>
+                  <td>35</td>
+                  <td>2.0</td>
+                  <td>97</td>
+                  <td>17%</td>
+                  <td>2%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Ice crean sandwich</td>
+                  <td>1.4</td>
+                  <td>4.0</td>
+                  <td>40</td>
+                  <td>8.0</td>
+                  <td>83</td>
+                  <td>14%</td>
+                  <td>7%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Eclair</td>
+                  <td>1.7</td>
+                  <td>3.0</td>
+                  <td>34</td>
+                  <td>6.0</td>
+                  <td>67</td>
+                  <td>17%</td>
+                  <td>3%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Cupcake</td>
+                  <td>2.49</td>
+                  <td>4.0</td>
+                  <td>45</td>
+                  <td>3.05</td>
+                  <td>83</td>
+                  <td>20%</td>
+                  <td>9%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Jellybean</td>
+                  <td>0.78</td>
+                  <td>5.2</td>
+                  <td>35</td>
+                  <td>2.0</td>
+                  <td>27</td>
+                  <td>18%</td>
+                  <td>37%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Gingerbread</td>
+                  <td>1.59</td>
+                  <td>6.0</td>
+                  <td>50</td>
+                  <td>4.0</td>
+                  <td>87</td>
+                  <td>20%</td>
+                  <td>4%</td>
+                  <td>5.7%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Lollipop</td>
+                  <td>1.59</td>
+                  <td>6.0</td>
+                  <td>50</td>
+                  <td>4.0</td>
+                  <td>87</td>
+                  <td>20%</td>
+                  <td>4%</td>
+                  <td>6.5%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Honeycomb</td>
+                  <td>0.45</td>
+                  <td>5.0</td>
+                  <td>45</td>
+                  <td>3.5</td>
+                  <td>45</td>
+                  <td>19%</td>
+                  <td>26%</td>
+                  <td>9%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Donut</td>
+                  <td>0.67</td>
+                  <td>5.0</td>
+                  <td>56</td>
+                  <td>3.34</td>
+                  <td>67</td>
+                  <td>23%</td>
+                  <td>4%</td>
+                  <td>1.8%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Kitkat</td>
+                  <td>0.59</td>
+                  <td>8.34</td>
+                  <td>43</td>
+                  <td>1.97</td>
+                  <td>34</td>
+                  <td>18%</td>
+                  <td>13%</td>
+                  <td>1.5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+        <div class="mdc-card p-0">
+          <h6 class="card-title card-padding pb-0">Striped Table</h6>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="text-left">Dessert (100g serving)</th>
+                  <th>Calories</th>
+                  <th>Fat (g)</th>
+                  <th>Link</th>
+                  <th>Carbs</th>
+                  <th>Protein (g)</th>
+                  <th>Sodium (mg)</th>
+                  <th>Calcium (%)</th>
+                  <th>Iron (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-left">Frozen yogurt</td>
+                  <td>1.59</td>
+                  <td>6.0</td>
+                  <td>50</td>
+                  <td>4.0</td>
+                  <td>87</td>
+                  <td>20%</td>
+                  <td>4%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Frozen yogurt</td>
+                  <td>1.59</td>
+                  <td>2.5</td>
+                  <td>35</td>
+                  <td>2.0</td>
+                  <td>97</td>
+                  <td>17%</td>
+                  <td>2%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Ice crean sandwich</td>
+                  <td>1.4</td>
+                  <td>4.0</td>
+                  <td>40</td>
+                  <td>8.0</td>
+                  <td>83</td>
+                  <td>14%</td>
+                  <td>7%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Eclair</td>
+                  <td>1.7</td>
+                  <td>3.0</td>
+                  <td>34</td>
+                  <td>6.0</td>
+                  <td>67</td>
+                  <td>17%</td>
+                  <td>3%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Cupcake</td>
+                  <td>2.49</td>
+                  <td>4.0</td>
+                  <td>45</td>
+                  <td>3.05</td>
+                  <td>83</td>
+                  <td>20%</td>
+                  <td>9%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Jellybean</td>
+                  <td>0.78</td>
+                  <td>5.2</td>
+                  <td>35</td>
+                  <td>2.0</td>
+                  <td>27</td>
+                  <td>18%</td>
+                  <td>37%</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Gingerbread</td>
+                  <td>1.59</td>
+                  <td>6.0</td>
+                  <td>50</td>
+                  <td>4.0</td>
+                  <td>87</td>
+                  <td>20%</td>
+                  <td>4%</td>
+                  <td>5.7%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Lollipop</td>
+                  <td>1.59</td>
+                  <td>6.0</td>
+                  <td>50</td>
+                  <td>4.0</td>
+                  <td>87</td>
+                  <td>20%</td>
+                  <td>4%</td>
+                  <td>6.5%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Honeycomb</td>
+                  <td>0.45</td>
+                  <td>5.0</td>
+                  <td>45</td>
+                  <td>3.5</td>
+                  <td>45</td>
+                  <td>19%</td>
+                  <td>26%</td>
+                  <td>9%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Donut</td>
+                  <td>0.67</td>
+                  <td>5.0</td>
+                  <td>56</td>
+                  <td>3.34</td>
+                  <td>67</td>
+                  <td>23%</td>
+                  <td>4%</td>
+                  <td>1.8%</td>
+                </tr>
+                <tr>
+                  <td class="text-left">Kitkat</td>
+                  <td>0.59</td>
+                  <td>8.34</td>
+                  <td>43</td>
+                  <td>1.97</td>
+                  <td>34</td>
+                  <td>18%</td>
+                  <td>13%</td>
+                  <td>1.5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </main>
 
-<script type="text/javascript" src="/material/css/addons/datatables.min.css"></script>
-<script type="text/javascript" src="/material/js/addons/datatables.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    $('#dtBasicExample').DataTable();
-    $('.dataTables_length').addClass('bs-select');
+    $('#table_id').DataTable({
+      autoWidth: false,
+      columnDefs: [{
+        targets: ['_all'],
+        className: 'mdc-data-table__cell'
+      }]
+    });
   });
 </script>

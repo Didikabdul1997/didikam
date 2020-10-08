@@ -25,7 +25,6 @@ class Auth extends CI_Controller
         $this->load->view('depan/auth/login', $data);
     }
 
-
     public function signIn()
     {
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email', [
@@ -48,6 +47,7 @@ class Auth extends CI_Controller
                             'role_id' => $user['role_id'],
                             'image' => $user['image']
                         ];
+                        $data['token'] = $this->security->get_csrf_hash();
                         $this->session->set_userdata($data);
                         echo json_encode(array('status' => 1, 'pesan' => "Anda Sudah Login", 'role_id' => $user['role_id']));
                     } else {
